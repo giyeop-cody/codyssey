@@ -1,0 +1,3 @@
+[submodule "ai-sw-basic"]
+	path = ai-sw-basic
+	url = https://github.com/giyeop-cody/ai-sw-basic.git
