@@ -1,3 +1,69 @@
 [submodule "ai-sw-basic"]
 	path = ai-sw-basic
 	url = https://github.com/giyeop-cody/ai-sw-basic.git
+[submodule "A1-1"]
+	path = A1-1
+	url = https://github.com/giyeop-cody/codyssey-A1-1-mission.git
+[submodule "A1-1-studylog"]
+	path = A1-1-studylog
+	url = https://github.com/giyeop-cody/codyssey-A1-1-studylog.git
+[submodule "A2-1"]
+	path = A2-1
+	url = https://github.com/giyeop-cody/codyssey-A2-1-mission.git
+[submodule "A2-1-studylog"]
+	path = A2-1-studylog
+	url = https://github.com/giyeop-cody/codyssey-A2-1-studylog.git
+[submodule "A3-1"]
+	path = A3-1
+	url = https://github.com/giyeop-cody/codyssey-A3-1-mission.git
+[submodule "A3-1-studylog"]
+	path = A3-1-studylog
+	url = https://github.com/giyeop-cody/codyssey-A3-1-studylog.git
+[submodule "A3-2"]
+	path = A3-2
+	url = https://github.com/giyeop-cody/codyssey-A3-2-mission.git
+[submodule "A3-2-studylog"]
+	path = A3-2-studylog
+	url = https://github.com/giyeop-cody/codyssey-A3-2-studylog.git
+[submodule "A4-1"]
+	path = A4-1
+	url = https://github.com/giyeop-cody/codyssey-A4-1-mission.git
+[submodule "A4-1-studylog"]
+	path = A4-1-studylog
+	url = https://github.com/giyeop-cody/codyssey-A4-1-studylog.git
+[submodule "A4-2"]
+	path = A4-2
+	url = https://github.com/giyeop-cody/codyssey-A4-2-mission.git
+[submodule "A4-2-studylog"]
+	path = A4-2-studylog
+	url = https://github.com/giyeop-cody/codyssey-A4-2-studylog.git
+[submodule "A5-1"]
+	path = A5-1
+	url = https://github.com/giyeop-cody/codyssey-A5-1-mission.git
+[submodule "A5-1-studylog"]
+	path = A5-1-studylog
+	url = https://github.com/giyeop-cody/codyssey-A5-1-studylog.git
+[submodule "A5-2"]
+	path = A5-2
+	url = https://github.com/giyeop-cody/codyssey-A5-2-mission.git
+[submodule "A5-2-studylog"]
+	path = A5-2-studylog
+	url = https://github.com/giyeop-cody/codyssey-A5-2-studylog.git
+[submodule "A6-1"]
+	path = A6-1
+	url = https://github.com/giyeop-cody/codyssey-A6-1-mission.git
+[submodule "A6-1-studylog"]
+	path = A6-1-studylog
+	url = https://github.com/giyeop-cody/codyssey-A6-1-studylog.git
+[submodule "A6-2"]
+	path = A6-2
+	url = https://github.com/giyeop-cody/codyssey-A6-2-mission.git
+[submodule "A6-2-studylog"]
+	path = A6-2-studylog
+	url = https://github.com/giyeop-cody/codyssey-A6-2-studylog.git
+[submodule "codyssey-taskmap"]
+	path = codyssey-taskmap
+	url = https://github.com/giyeop-cody/codyssey-taskmap.git
+[submodule "codyssey-A-studylog-hub"]
+	path = codyssey-A-studylog-hub
+	url = https://github.com/giyeop-cody/codyssey-A-studylog-hub.git
