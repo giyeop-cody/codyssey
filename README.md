@@ -22,9 +22,9 @@ codyssey/                             # 올인원 루트 레포 (공개)
 | 과정 | projectNo | 기간 | 과제 | 학습시간 | 허브 레포 | 이 레포 안 위치 | 진행 (자체 검증 기준) |
 |---|:--:|---|:--:|:--:|---|---|---|
 | **기초(Basic)** AI/SW 기초 | 136003 | 2026-05-07 ~ 2026-10-31 | 15개 | 960h | [ai-sw-basic](https://github.com/giyeop-cody/ai-sw-basic) | `ai-sw-basic/` | PASS 5 · 진행중/평가전/대기 10 |
-| **심화(Advanced)** AI/SW 심화 | 136002 | 2026-11-01 ~ 2027-03-31 | 11개 | 800h | [codyssey-A-studylog-hub](https://github.com/giyeop-cody/codyssey-A-studylog-hub) 🔒 | `A*-*/` 20개 + 허브 | 구현 완료 3 (A1-1·A2-1·A3-1) · 스캐폴드 7 · 레포 없음 1 |
+| **심화(Advanced)** AI/SW 심화 | 136002 | 2026-11-01 ~ 2027-03-31 | 11개 | 800h | [codyssey-A-studylog-hub](https://github.com/giyeop-cody/codyssey-A-studylog-hub) 🔒 | `A*-*/` 20개 + 허브 | 구현 완료 6 (A1-1·A2-1·A3-1·A4-1·A4-2·A5-1) · 실구현·판정유보 1 (A3-2) · 스캐폴드 3 (A5-2·A6-1·A6-2) · 레포 없음 1 |
 | **응용(Master)** AI/SW 응용 | 136001 | 2027-04-01 ~ 2027-09-30 | 15개 | 5280h | 없음 | — | 전 과제 미착수 (정의서만 있음) |
-| **총합** | | | **41개** | **7040h** | [codyssey-taskmap](https://github.com/giyeop-cody/codyssey-taskmap) 🔒 | `codyssey-taskmap/` | 기준일 2026-09-27 |
+| **총합** | | | **41개** | **7040h** | [codyssey-taskmap](https://github.com/giyeop-cody/codyssey-taskmap) 🔒 | `codyssey-taskmap/` | 기준일 2026-10-07 |
 
 상태 판정 근거와 남은 절차는 [codyssey-taskmap/PROGRESS.md](https://github.com/giyeop-cody/codyssey-taskmap/blob/main/PROGRESS.md) 🔒 에 있다. Codyssey 플랫폼의 공식 평가 결과는 이 레포가 확인할 수 없어 **어떤 과제도 '공식 완료'로 표시하지 않는다**.
 
@@ -157,5 +157,5 @@ git config --global url."https://${GITHUB_TOKEN}@github.com/".insteadOf "https:/
 ---
 
 > *이 레포지토리는 Codyssey 학습 플랫폼의 과제 체계를 기반으로 자동 구성되었습니다.*  
-> *3과정 통합·정의서 연결 갱신: 2026-09-27*
+> *3과정 통합·정의서 연결 갱신: 2026-09-27 · 핀·상태 전수 재동기: 2026-10-07*
 
