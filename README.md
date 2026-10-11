@@ -164,3 +164,13 @@ git config --global url."https://${GITHUB_TOKEN}@github.com/".insteadOf "https:/
 ## 심화 A 과제 — 평가 항목에 맞춘 실제 산출물 개선
 
 10개 과제의 구현·분석 산출물을 보완하고 스터디 로그의 질문·답변을 갱신했다. [개선 결과와 최신 답변 색인](https://github.com/giyeop-cody/codyssey-A-studylog-hub/blob/4974bd0c7e13323bd51fbc601b13736b2ec42e51/docs/08-evaluation-improvements.md)에서 수정 사항·실측·남은 검증 범위를 확인한다.
+
+## 2026-10-11 원문 기준 재검증
+
+[최신 독립 재검증 기록](codyssey-A-studylog-hub/docs/09-independent-reverification.md): 테스트327건 통과, 선택 OCR3건 미검증, 기존 곡면 모델1건 예상 실패. 원문 충돌·GUI/실영상 미검증·PCA 평가 조건 차이가 남아 전체 충족 판정 및 커밋·푸시는 보류했다. 변경은 로컬 작업 트리에 남아 있다.
+
+최신재검증: [334개 회귀검사와 남은 차이](codyssey-A-studylog-hub/docs/10-final-reverification.md). 커밋·푸시는 보류했다.
+
+## 이어서 진행할 작업
+
+현재 상태는 미완료 작업 체크포인트입니다. [핸드오프](HANDOFF-2026-10-11.md)의 남은 항목과 재현 방법을 확인하세요. `git submodule update --init --recursive`로 하위 저장소까지 복원하세요.

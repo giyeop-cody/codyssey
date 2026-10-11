@@ -1,0 +1,102 @@
+{
+  "uoft-cs/cifar10": {
+    "revision": "0b2714987fa478483af9968de7c934580d0bb9a2",
+    "source": "https://huggingface.co/datasets/uoft-cs/cifar10",
+    "tags": [
+      "task_categories:image-classification",
+      "annotations_creators:crowdsourced",
+      "language_creators:found",
+      "multilinguality:monolingual",
+      "source_datasets:extended|other-80-Million-Tiny-Images",
+      "language:en",
+      "license:unknown",
+      "size_categories:10K<n<100K",
+      "format:parquet",
+      "modality:image",
+      "library:datasets",
+      "library:pandas",
+      "library:mlcroissant",
+      "library:polars",
+      "region:us"
+    ],
+    "files": [
+      "plain_text/test-00000-of-00001.parquet",
+      "plain_text/train-00000-of-00001.parquet"
+    ]
+  },
+  "naver-clova-ix/cord-v2": {
+    "revision": "7f0115a4b758a71d6473b8d085751692da2fef98",
+    "source": "https://huggingface.co/datasets/naver-clova-ix/cord-v2",
+    "tags": [
+      "license:cc-by-4.0",
+      "size_categories:1K<n<10K",
+      "format:parquet",
+      "modality:image",
+      "modality:text",
+      "library:datasets",
+      "library:dask",
+      "library:mlcroissant",
+      "library:polars",
+      "region:us"
+    ],
+    "files": [
+      "data/test-00000-of-00001-9c204eb3f4e11791.parquet",
+      "data/train-00000-of-00004-b4aaeceff1d90ecb.parquet",
+      "data/train-00001-of-00004-7dbbe248962764c5.parquet",
+      "data/train-00002-of-00004-688fe1305a55e5cc.parquet",
+      "data/train-00003-of-00004-2d0cd200555ed7fd.parquet",
+      "data/validation-00000-of-00001-cc3c5779fe22e8ca.parquet"
+    ]
+  },
+  "zimka/midv-DoB-mini": {
+    "revision": "e79ed879dcf2ac01d88d1db13d12bab35f9349b2",
+    "source": "https://huggingface.co/datasets/zimka/midv-DoB-mini",
+    "tags": [
+      "size_categories:n<1K",
+      "format:parquet",
+      "modality:image",
+      "modality:text",
+      "library:datasets",
+      "library:pandas",
+      "library:mlcroissant",
+      "library:polars",
+      "region:us"
+    ],
+    "files": [
+      "data/distortion-00000-of-00001.parquet",
+      "data/lightning-00000-of-00001.parquet",
+      "data/template-00000-of-00001.parquet"
+    ]
+  },
+  "Morrison1025/MOT17": {
+    "revision": "18fea9c0394dafc611032c5d419ff50b2b28af3f",
+    "source": "https://huggingface.co/datasets/Morrison1025/MOT17",
+    "tags": [
+      "task_categories:object-detection",
+      "language:en",
+      "license:other",
+      "size_categories:10K<n<100K",
+      "format:imagefolder",
+      "modality:image",
+      "modality:video",
+      "library:datasets",
+      "library:mlcroissant",
+      "arxiv:2010.07548",
+      "region:us",
+      "computer-vision",
+      "video",
+      "multi-object-tracking",
+      "pedestrian-tracking",
+      "object-detection",
+      "motchallenge",
+      "mot17",
+      "tracking",
+      "datasets"
+    ],
+    "files": []
+  },
+  "e9t/nsmc": {
+    "revision": "eafdd77e310f399a4d0083a58ade40b55a5a308d",
+    "source": "https://github.com/e9t/nsmc"
+  }
+}

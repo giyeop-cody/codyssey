@@ -1,0 +1,178 @@
+[
+  {
+    "repo": "A1-1",
+    "branch": "main",
+    "head": "625ebae015757716f3a10328d94f7a666219ea29",
+    "origin_main": "625ebae015757716f3a10328d94f7a666219ea29",
+    "changed_entries": 22,
+    "status": "M README.md\n M figures/01_hist_price.png\n M figures/02_box_price_before_after.png\n M figures/03_bar_segment.png\n M figures/04_heatmap_corr.png\n M figures/05_scatter_price_vs_imgmean.png\n M figures/06_line_monthly_revenue.png\n M notebooks/analysis_report.ipynb\n M reports/analysis.md\n M reports/gates.json\n M reports/metrics.json\n M reports/summary.csv\n M scripts/build_notebook.py\n M scripts/check_requirements.py\n M scripts/run_analysis.py\n M src/data_gen.py\n M src/pipeline.py\n?? docs/independent-reverification.md\n?? docs/reproduce-verification.md\n?? reports/independent-reverification.json\n?? requirements-verification-lock.txt\n?? tests/test_original_requirements.py"
+  },
+  {
+    "repo": "A1-1-studylog",
+    "branch": "main",
+    "head": "7ebce371ab752b4a9f76289f39f4453e0177e240",
+    "origin_main": "7ebce371ab752b4a9f76289f39f4453e0177e240",
+    "changed_entries": 7,
+    "status": "M README.md\n M docs/10-evaluation-answers.md\n M docs/evaluation-mapping.json\n?? docs/13-independent-reverification.md\n?? docs/14-final-reverification.md\n?? docs/reproduce-verification.md\n?? requirements-verification-lock.txt"
+  },
+  {
+    "repo": "A2-1",
+    "branch": "main",
+    "head": "48bce503fdd903d5b68baf4735844d12811e6797",
+    "origin_main": "48bce503fdd903d5b68baf4735844d12811e6797",
+    "changed_entries": 30,
+    "status": "M README.md\n M figures/01_linalg_transforms.png\n M figures/01a_rotation.png\n M figures/01b_scaling.png\n M figures/01c_shear.png\n M figures/02_svd_compare.png\n M figures/02b_svd_spectrum.png\n M figures/03_gradient_contours.png\n M figures/04_optimizer_paths.png\n M figures/05_lr_sweep.png\n M figures/06_normal_pdf.png\n M figures/07_bernoulli_pmf.png\n M figures/08_power_iteration.png\n M figures/09_lr_divergence.png\n M figures/10_momentum_speed.png\n M notebooks/backprop_derivation.ipynb\n M notebooks/probability_loss.ipynb\n M reports/analysis.md\n M reports/linear_algebra.json\n M reports/metrics.json\n M reports/power_iteration.json\n M requirements.txt\n M scripts/_nb_backprop.py\n M scripts/_nb_probability.py\n M src/_common.py\n M src/probability.py\n?? docs/independent-reverification.md\n?? docs/reproduce-verification.md\n?? reports/independent-reverification.json\n?? requirements-verification-lock.txt"
+  },
+  {
+    "repo": "A2-1-studylog",
+    "branch": "main",
+    "head": "8902abb4fd98d41dc23ae1eda38537aeabc923de",
+    "origin_main": "8902abb4fd98d41dc23ae1eda38537aeabc923de",
+    "changed_entries": 7,
+    "status": "M README.md\n M docs/10-evaluation-answers.md\n M docs/evaluation-mapping.json\n?? docs/13-independent-reverification.md\n?? docs/14-final-reverification.md\n?? docs/reproduce-verification.md\n?? requirements-verification-lock.txt"
+  },
+  {
+    "repo": "A3-1",
+    "branch": "main",
+    "head": "8b38751a942dc185b793be484be2044b6d849916",
+    "origin_main": "8b38751a942dc185b793be484be2044b6d849916",
+    "changed_entries": 15,
+    "status": "M README.md\n M src/gui_trackbars.py\n M src/reconstruct_pdf.py\n M tests/test_editable_pdf.py\n M tests/test_reconstruct_pdf.py\n M tests/test_reconstruct_review.py\n?? docs/independent-reverification.md\n?? docs/reproduce-verification.md\n?? reports/gui-native-verification.json\n?? reports/independent-reverification.json\n?? reports/verification-inputs.json\n?? requirements-verification-lock.txt\n?? scripts/fetch_verification_inputs.py\n?? scripts/reproduce_midv_inputs.py\n?? scripts/verify_native_gui.py"
+  },
+  {
+    "repo": "A3-1-studylog",
+    "branch": "main",
+    "head": "1e2ffa74071a08bcba733d40b5fc2248f7db36aa",
+    "origin_main": "1e2ffa74071a08bcba733d40b5fc2248f7db36aa",
+    "changed_entries": 7,
+    "status": "M README.md\n M docs/10-evaluation-answers.md\n M docs/evaluation-mapping.json\n?? docs/13-independent-reverification.md\n?? docs/14-final-reverification.md\n?? docs/reproduce-verification.md\n?? requirements-verification-lock.txt"
+  },
+  {
+    "repo": "A3-2",
+    "branch": "main",
+    "head": "b517ce567a3654dfd36a4a69873c3fb6552baa2e",
+    "origin_main": "b517ce567a3654dfd36a4a69873c3fb6552baa2e",
+    "changed_entries": 29,
+    "status": "M .gitignore\n M README.md\n M report/analysis.md\n M reports/evaluation-improvements.json\n M reports/gates.json\n M reports/measurement-log.csv\n M reports/metrics.json\n M src/app.py\n M src/evaluate.py\n?? docs/independent-reverification.md\n?? docs/reproduce-verification.md\n?? figures/\n?? report/measurement-reverification.md\n?? reports/gui-native-verification.json\n?? reports/independent-reverification.json\n?? reports/manual-event-worksheet.csv\n?? reports/manual-review/\n?? reports/real-video-benchmark-04.json\n?? reports/real-video-benchmark.json\n?? reports/verification-inputs.json\n?? requirements-verification-lock.txt\n?? scripts/count_reviewed_events.py\n?? scripts/evaluate_real_video.py\n?? scripts/fetch_real_video.py\n?? scripts/fetch_verification_inputs.py\n?? scripts/prepare_manual_review.py\n?? scripts/render_measurement_report.py\n?? scripts/verify_native_gui.py\n?? tests/test_measurement_protocol.py"
+  },
+  {
+    "repo": "A3-2-studylog",
+    "branch": "main",
+    "head": "52151f247d09d851b4d2a7280cc0308205239780",
+    "origin_main": "52151f247d09d851b4d2a7280cc0308205239780",
+    "changed_entries": 7,
+    "status": "M README.md\n M docs/10-evaluation-answers.md\n M docs/evaluation-mapping.json\n?? docs/13-independent-reverification.md\n?? docs/14-final-reverification.md\n?? docs/reproduce-verification.md\n?? requirements-verification-lock.txt"
+  },
+  {
+    "repo": "A4-1",
+    "branch": "main",
+    "head": "a2ac3c904e0358f469ffb8638fc33e972cefbb87",
+    "origin_main": "a2ac3c904e0358f469ffb8638fc33e972cefbb87",
+    "changed_entries": 12,
+    "status": "M README.md\n M reports/fetch_data.json\n M scripts/cross_check_readme.py\n M src/corpus.py\n?? docs/independent-reverification.md\n?? docs/reproduce-verification.md\n?? reports/A4-1-independent-corpus-audit.json\n?? reports/independent-reverification.json\n?? reports/verification-inputs.json\n?? requirements-verification-lock.txt\n?? scripts/fetch_verification_inputs.py\n?? tests/test_numeric_provenance.py"
+  },
+  {
+    "repo": "A4-1-studylog",
+    "branch": "main",
+    "head": "0b6d46e3a99a899368ea7904826d55e4472208c4",
+    "origin_main": "0b6d46e3a99a899368ea7904826d55e4472208c4",
+    "changed_entries": 7,
+    "status": "M README.md\n M docs/10-evaluation-answers.md\n M docs/evaluation-mapping.json\n?? docs/13-independent-reverification.md\n?? docs/14-final-reverification.md\n?? docs/reproduce-verification.md\n?? requirements-verification-lock.txt"
+  },
+  {
+    "repo": "A4-2",
+    "branch": "main",
+    "head": "e8b731963007e958da0070b05851155128974947",
+    "origin_main": "e8b731963007e958da0070b05851155128974947",
+    "changed_entries": 6,
+    "status": "M README.md\n?? docs/independent-reverification.md\n?? docs/reproduce-verification.md\n?? reports/A4-2-original-examples-audit.json\n?? reports/independent-reverification.json\n?? requirements-verification-lock.txt"
+  },
+  {
+    "repo": "A4-2-studylog",
+    "branch": "main",
+    "head": "10722eaa77e02c14eaf80b2de67689dcb6ac71c3",
+    "origin_main": "10722eaa77e02c14eaf80b2de67689dcb6ac71c3",
+    "changed_entries": 7,
+    "status": "M README.md\n M docs/10-evaluation-answers.md\n M docs/evaluation-mapping.json\n?? docs/13-independent-reverification.md\n?? docs/14-final-reverification.md\n?? docs/reproduce-verification.md\n?? requirements-verification-lock.txt"
+  },
+  {
+    "repo": "A5-1",
+    "branch": "main",
+    "head": "05c82dbcc8fa7a92604b621ee22aa8c0e824882e",
+    "origin_main": "05c82dbcc8fa7a92604b621ee22aa8c0e824882e",
+    "changed_entries": 6,
+    "status": "M README.md\n?? docs/independent-reverification.md\n?? docs/reproduce-verification.md\n?? reports/independent-reverification.json\n?? reports/original-data-audit.json\n?? requirements-verification-lock.txt"
+  },
+  {
+    "repo": "A5-1-studylog",
+    "branch": "main",
+    "head": "07d4d6f6614b88f59f720d4b1fbffb1cc575ed86",
+    "origin_main": "07d4d6f6614b88f59f720d4b1fbffb1cc575ed86",
+    "changed_entries": 7,
+    "status": "M README.md\n M docs/10-evaluation-answers.md\n M docs/evaluation-mapping.json\n?? docs/13-independent-reverification.md\n?? docs/14-final-reverification.md\n?? docs/reproduce-verification.md\n?? requirements-verification-lock.txt"
+  },
+  {
+    "repo": "A5-2",
+    "branch": "main",
+    "head": "fa6616d864867aaa6ef794f698dff3f54035d7f3",
+    "origin_main": "fa6616d864867aaa6ef794f698dff3f54035d7f3",
+    "changed_entries": 43,
+    "status": "M README.md\n M config.py\n M figures/01_k_selection.png\n M figures/02_pca_clusters.png\n M figures/03_cluster_profile.png\n M figures/04_shap_summary.png\n M figures/05_force_reject.html\n M figures/05_waterfall_reject.png\n M figures/06_force_approve.html\n M figures/06_waterfall_approve.png\n M figures/07_dependence_annual_income.png\n M figures/08_dependence_overdue_count_6m.png\n M figures/09_dependence_debt_ratio.png\n M figures/10_persona_local_C0.png\n M figures/10_persona_local_C1.png\n D figures/10_persona_local_C2.png\n D figures/10_persona_local_C3.png\n M figures/11_waterfall_false_negative.png\n M figures/cluster-profile-supplement.png\n M figures/pca-3d-supplement.png\n M reports/algo_compare.json\n M reports/cluster_profile.csv\n M reports/clusters.json\n M reports/data_facts.json\n M reports/gates.json\n M reports/k_selection.json\n M reports/k_sweep.csv\n M reports/label_ceiling.json\n M reports/metrics.json\n M reports/projection-review.json\n M reports/xai.json\n M scripts/evaluate_projection.py\n M scripts/record_gates.py\n M scripts/run_all.py\n M src/cluster.py\n M src/xai.py\n M tests/test_mission.py\n?? docs/independent-reverification.md\n?? docs/reproduce-verification.md\n?? reports/independent-reverification.json\n?? reports/original-data-audit.json\n?? reports/pca-policy-audit.json\n?? requirements-verification-lock.txt"
+  },
+  {
+    "repo": "A5-2-studylog",
+    "branch": "main",
+    "head": "fa292e7ed022e2b1ccd1d3986c38a3595aabe03f",
+    "origin_main": "fa292e7ed022e2b1ccd1d3986c38a3595aabe03f",
+    "changed_entries": 7,
+    "status": "M README.md\n M docs/10-evaluation-answers.md\n M docs/evaluation-mapping.json\n?? docs/13-independent-reverification.md\n?? docs/14-final-reverification.md\n?? docs/reproduce-verification.md\n?? requirements-verification-lock.txt"
+  },
+  {
+    "repo": "A6-1",
+    "branch": "main",
+    "head": "2e9384fb171172e422a5a92bf0416b95811da48d",
+    "origin_main": "2e9384fb171172e422a5a92bf0416b95811da48d",
+    "changed_entries": 10,
+    "status": "M README.md\n M reports/gates.json\n M reports/gradcheck.json\n M reports/gradcheck_report.md\n M reports/verification_report.md\n?? docs/independent-reverification.md\n?? docs/reproduce-verification.md\n?? reports/A6-1-independent-probes.json\n?? reports/independent-reverification.json\n?? requirements-verification-lock.txt"
+  },
+  {
+    "repo": "A6-1-studylog",
+    "branch": "main",
+    "head": "a8cd16de5344fe7fab6d1e0230a6efdf4c703dec",
+    "origin_main": "a8cd16de5344fe7fab6d1e0230a6efdf4c703dec",
+    "changed_entries": 7,
+    "status": "M README.md\n M docs/10-evaluation-answers.md\n M docs/evaluation-mapping.json\n?? docs/13-independent-reverification.md\n?? docs/14-final-reverification.md\n?? docs/reproduce-verification.md\n?? requirements-verification-lock.txt"
+  },
+  {
+    "repo": "A6-2",
+    "branch": "main",
+    "head": "49437916a1efd966d547c5fb76e7f53783fdef15",
+    "origin_main": "49437916a1efd966d547c5fb76e7f53783fdef15",
+    "changed_entries": 25,
+    "status": "M .gitignore\n M README.md\n M figures/baseline_bar.png\n M figures/error_gallery.png\n M figures/timeseries_pred.png\n M figures/ts_learning_curves.png\n M reports/baselines.csv\n M reports/error_actions.md\n M reports/rnn_seeds.csv\n M reports/timeseries_summary.json\n M reports/ts_curves.csv\n M scripts/prepare_cifar_mirror.py\n M scripts/run_errors.py\n M scripts/run_timeseries.py\n M src/ts_data.py\n?? docs/independent-reverification.md\n?? docs/reproduce-verification.md\n?? fixtures/\n?? reports/errors-visual-review.csv\n?? reports/errors-visual-review.json\n?? reports/independent-reverification.json\n?? reports/timeseries_predictions.csv\n?? reports/verification-inputs.json\n?? requirements-verification-lock.txt\n?? scripts/fetch_verification_inputs.py"
+  },
+  {
+    "repo": "A6-2-studylog",
+    "branch": "main",
+    "head": "8f622a8aacca158a29071a45f186ea7b2d641ece",
+    "origin_main": "8f622a8aacca158a29071a45f186ea7b2d641ece",
+    "changed_entries": 7,
+    "status": "M README.md\n M docs/10-evaluation-answers.md\n M docs/evaluation-mapping.json\n?? docs/13-independent-reverification.md\n?? docs/14-final-reverification.md\n?? docs/reproduce-verification.md\n?? requirements-verification-lock.txt"
+  },
+  {
+    "repo": "codyssey-A-studylog-hub",
+    "branch": "main",
+    "head": "4974bd0c7e13323bd51fbc601b13736b2ec42e51",
+    "origin_main": "4974bd0c7e13323bd51fbc601b13736b2ec42e51",
+    "changed_entries": 6,
+    "status": "M README.md\n?? docs/09-independent-reverification.md\n?? docs/10-final-reverification.md\n?? docs/independent-reverification.json\n?? docs/reproduce-verification.md\n?? requirements-verification-lock.txt"
+  },
+  {
+    "repo": ".",
+    "branch": "main",
+    "head": "2300e19598936db79c3bed7e7c9a974adaf1a9ed",
+    "origin_main": "2300e19598936db79c3bed7e7c9a974adaf1a9ed",
+    "changed_entries": 24,
+    "status": "M A1-1\n M A1-1-studylog\n M A2-1\n M A2-1-studylog\n M A3-1\n M A3-1-studylog\n M A3-2\n M A3-2-studylog\n M A4-1\n M A4-1-studylog\n M A4-2\n M A4-2-studylog\n M A5-1\n M A5-1-studylog\n M A5-2\n M A5-2-studylog\n M A6-1\n M A6-1-studylog\n M A6-2\n M A6-2-studylog\n M README.md\n M codyssey-A-studylog-hub\n?? docs/\n?? requirements-verification-lock.txt"
+  }
+]
