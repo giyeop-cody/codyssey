@@ -1,0 +1,4 @@
+[cross_check] reports 18개·수치 1338개·표기 4672종·파생 71246종 · 대상 ['README.md', 'analysis.md'] · 출처 없음 0건
+[cross_check] 머리값 대조 26/26 일치
+[cross_check] 안(A) 예시 출력: 질의 일치 ✓ · 상위 5건 (score, doc_id) 일치 ✓
+→ PASS: 리포트의 모든 숫자(안(A) 예시 출력 포함)가 이 런의 reports/*.json 에서 재구성된다

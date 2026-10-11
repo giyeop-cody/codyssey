@@ -1,0 +1,36 @@
+[PASS] data/products.csv 존재                                C:\Users\rlduq\Downloads\Codyssey\codyssey\A1-1\data\products.csv
+[PASS] data/transactions.csv 존재                            C:\Users\rlduq\Downloads\Codyssey\codyssey\A1-1\data\transactions.csv
+[PASS] 상품 1000건 이상                                         1200건
+[PASS] 상품 컬럼 8개 이상                                         9개
+[PASS] 타입 3종 이상(csv 읽기 기준)                                 3종: ['float64', 'int64', 'object']
+[PASS] 거래 테이블 필수 3컬럼                                       ['txn_id', 'product_id', 'customer_id', 'quantity', 'amount', 'order_date', 'txn_date']
+[PASS] DataAnalyzer.load_data 존재
+[PASS] DataAnalyzer.handle_missing_values 존재
+[PASS] DataAnalyzer.detect_outliers 존재
+[PASS] DataAnalyzer.calculate_rfm 존재
+[PASS] detect_outliers 가 k·policy 를 인자로 받는다                (self, column: 'str', k: 'float' = 1.5, policy: 'str' = 'flag', groupby: 'str | None' = None) -> 'pd.DataFrame'
+[PASS] 본문에 마법 숫자 1.5 하드코딩 없음(기본값·수식 설명만 허용)                []
+[PASS] reports/metrics.json 존재(먼저 run_analysis.py 실행)
+[PASS] 임퓨테이션: 그룹별 중앙값 MAE < 전체 중앙값 MAE                     88566.7 → 32544.4
+[PASS] 검증이 유효: 평가 행 수 ≥ 20                                 36건
+[PASS] IQR: 로그정상 플래그 비율이 정규보다 크다                           normal 0.54% vs lognormal 7.16%
+[PASS] RFM 게이트: VIP 평균 Recency < 전체 중앙값                    VIP 4.9일 vs 비VIP 35.6일
+[PASS] RFM 세그먼트 4종 이상                                      ['대체고객', '성장고객', '우수고객', 'VIP']
+[PASS] 속도 주장에 비교 대상이 적혀 있다                                 순수Python/행루프/벡터화 3경로
+[PASS] figures/01_hist_price.png 존재·10KB 이상                19389B
+[PASS] figures/02_box_price_before_after.png 존재·10KB 이상    25898B
+[PASS] figures/03_bar_segment.png 존재·10KB 이상               24064B
+[PASS] figures/04_heatmap_corr.png 존재·10KB 이상              48265B
+[PASS] figures/05_scatter_price_vs_imgmean.png 존재·10KB 이상  69870B
+[PASS] figures/06_line_monthly_revenue.png 존재·10KB 이상      32187B
+[PASS] README '근거' 3회 이상                                   4회
+[PASS] README '실행' 3회 이상                                   10회
+[PASS] README '검증' 3회 이상                                   15회
+[PASS] README에 수치 포함(소수점 숫자 5개 이상)                         단위 문자 수
+[PASS] notebooks/analysis_report.ipynb 존재
+[PASS] 노트북 실행 결과 포함(nbconvert --execute 로 생성)              cells=16
+[PASS] 상관계수 5줄 전부 잣대 병기                                    피어슨|스피어만|클리핑|log1p 언급 확인
+[PASS] 스펙 커브 40개 이상 실행(reports/spec_curve.csv)             60행
+[PASS] README 가 스펙 커브 구간을 인용(최솟값·최댓값 둘 다)                  '스펙 커브' + 최소 0.011 + 최대 0.66x 언급을 요구
+[PASS] data/dataset_meta.json 존재(시드 기록)
+---- 35/35 PASS

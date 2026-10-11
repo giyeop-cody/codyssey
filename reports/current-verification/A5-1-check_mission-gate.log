@@ -1,0 +1,37 @@
+  PASS [원문] data_gen.py 존재(미션 제공 코드 원본)
+  PASS [원문] data_gen.py 가 첫 커밋 이후 수정되지 않았다(sha256 불변)
+  PASS [원문] finance_data.csv 생성됨(10,000건)
+  PASS [원문] .gitignore 로 csv 업로드 차단
+  PASS [원문] csv 가 저장소에 없다(*.csv 전부 미추적 — 원문 '*.csv 업로드 금지' 문자 그대로)
+  PASS [원문] if-else 규칙 5개 이상
+  PASS [원문] 베이스라인 4지표(Acc/Prec/Rec/F1) 측정
+  PASS [원문] README 비교표에 하한(전원거절)과 규칙이 함께
+  PASS [원문] Pipeline/ColumnTransformer 사용
+  PASS [원문] 수치형: 대치(imputation) 후 스케일링
+  PASS [원문] 범주형 인코딩 분기 존재(이 데이터엔 범주형 컬럼 없음 → 충돌 기록)
+  PASS [원문] fit 은 Train 에만(assert 4종 전부 PASS)
+  PASS [원문] 스케일러 fit 구간 위반이면 잡히는 구분력(의도 누수 탐지)
+  PASS [원문] 8:2 분할·random_state=42·stratified
+  PASS [원문] Cross-Validation 5-fold
+  PASS [원문] Ridge·Lasso 모두 + α {0.01,0.1,1,10,100}
+  PASS [원문] α 별 계수 변화 그래프
+  PASS [원문] 신용 점수 예측값이 0~1000 범위(최종결과물 2의 '출력')
+  PASS [원문] RMSE·MAE·R² 중 2개 이상(→ 3개 전부 측정)
+  PASS [원문] class_weight='balanced' 적용(SMOTE 대체 사유 기록)
+  PASS [원문] Confusion Matrix 시각화
+  PASS [원문] ROC-AUC 곡선 + AUC 값 명시(그림·README)
+  PASS [원문] RandomForest + GridSearchCV, 조합 ≤100(파라미터당 ≤5)
+  PASS [자체] (자체) 앙상블 판정: 단일 트리 비교군이 같은 프로토콜로 측정되어 있다(평가 Q1-6)
+  PASS [원문] (권장) 특징중요도 그림 + 해석 3줄
+  PASS [자체] (보너스) Learning Curve
+  PASS [자체] (보너스) Custom Transformer(IncomeBucket)
+  PASS [자체] 하한 라벨 의미: 전원 승인=0예측(FP=TP=0) · 전원 거절=1예측(TN=FN=0)
+  PASS [자체] G1 짝이 전원 승인(다수클래스) = 1−연체율(전체 모집단, 0예측 값)
+  PASS [자체] 무작위 예측 AUC ≈ 0.5(지표 파이프라인 자기검증)
+  PASS [자체] requirements.txt 에 scikit-learn 포함(버전 명세)
+  PASS [자체] 게이트 4/4 PASS(gates.json)
+  PASS [자체] README 갭 표가 비어있지 않다 + 정직한 상태 표기
+  PASS [자체] learning-map.md 를 손으로 갱신하지 않았다(허브 발췌본)
+  PASS [자체] README 숫자가 reports/*.json 에서 재구성된다(cross_check)
+  PASS [자체] src/·scripts/ 에 흩어진 시드 리터럴 없음
+---- 원문 24/24 PASS · 자체 12/12 PASS ----

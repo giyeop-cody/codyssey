@@ -1,0 +1,37 @@
+PASS L47 군집 입력 = 타깃 제외 입력변수
+PASS L48 PCA 2D 산점도(군집 색상) PNG
+PASS L48 군집 통계 + 페르소나
+PASS L50 입력 모델 = Mission 23(A5-1) 학습 모델 재현(비트 일치)
+PASS L51 SHAP Summary Plot PNG
+PASS L53 승인·거절 케이스 각 1건
+PASS L54 Waterfall PNG(권장) 또는 Force HTML
+PASS L56 Dependence Plot ≥1개 PNG
+PASS L56 Dependence 인사이트 2문장 이상(변수마다)
+PASS L58 README 군집 정의
+PASS L59 README 주요 변수 + 특정 고객 예측 사유
+PASS L60 README 군집별 전략 + 리스크 관리
+PASS L66 거절 케이스 p ≥ 0.5
+PASS L67 승인 케이스 = 정상 확률 높은 고객
+PASS L69 군집별 대표 고객 Local SHAP(권장)
+PASS L93 finance_data.csv 그대로(sha256 = A5-1)
+PASS L94 군집화에서 타깃 2열 제외
+PASS L97 컬럼 추가·병합·증강 없음(행 10,000·열 8 유지)
+PASS L99 K-Means 전 스케일링
+PASS L100 Elbow + Silhouette 로 K 선정
+PASS L101 실루엣 우선·엘보 보조·해석성 최종 — 선택 근거 기록
+PASS L102 PCA 2D 시각화
+PASS L103 EVR 표시(축 라벨 포맷 소스 + 값)
+PASS L104 군집별 통계·페르소나
+PASS L106 Tree 모델 + shap
+PASS L107 TreeExplainer 우선, KernelExplainer 미사용
+PASS L108 Summary: 중요도+방향
+PASS L109 Local: 승인/거절 예측 원인 그림
+PASS L110 Dependence: 변수 변화에 따른 추이
+PASS L111 변수 선택 = Summary 상위 1~2 + 비즈니스 1
+PASS L113 그래프마다 비즈니스 해석 텍스트
+PASS L114 군집별 마케팅/리스크 전략
+PASS L120~126 권장 7섹션
+PASS 보너스1 Streamlit app.py
+PASS 보너스2 DBSCAN/계층 비교
+
+원문 조항 33/33 PASS · 보너스 2/2

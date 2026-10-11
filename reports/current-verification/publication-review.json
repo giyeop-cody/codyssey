@@ -1,0 +1,355 @@
+{
+  "timestamp_utc": "2026-10-11T16:41:11.483984+00:00",
+  "missions": [
+    {
+      "mission": "A1-1",
+      "date": "2026-10-12",
+      "artifact_review_passed": true,
+      "blocking_issues": [],
+      "documented_limits": [],
+      "test_counts": {
+        "passed": 16
+      },
+      "gate_commands": [
+        {
+          "mission": "A1-1",
+          "command": "scripts/check_requirements.py",
+          "exit_code": 0,
+          "log": "reports\\current-verification\\A1-1-check_requirements-gate.log",
+          "summary": [
+            "[PASS] 노트북 실행 결과 포함(nbconvert --execute 로 생성)              cells=16",
+            "[PASS] 상관계수 5줄 전부 잣대 병기                                    피어슨|스피어만|클리핑|log1p 언급 확인",
+            "[PASS] 스펙 커브 40개 이상 실행(reports/spec_curve.csv)             60행",
+            "[PASS] README 가 스펙 커브 구간을 인용(최솟값·최댓값 둘 다)                  '스펙 커브' + 최소 0.011 + 최대 0.66x 언급을 요구",
+            "[PASS] data/dataset_meta.json 존재(시드 기록)                    ",
+            "---- 35/35 PASS"
+          ]
+        }
+      ],
+      "scope": "Implementation, retained artifact integrity and original-question coverage; not a personal-ability certification or a new full training run."
+    },
+    {
+      "mission": "A2-1",
+      "date": "2026-10-12",
+      "artifact_review_passed": true,
+      "blocking_issues": [],
+      "documented_limits": [],
+      "test_counts": {
+        "passed": 23
+      },
+      "gate_commands": [
+        {
+          "mission": "A2-1",
+          "command": "scripts/check_requirements.py",
+          "exit_code": 0,
+          "log": "reports\\current-verification\\A2-1-check_requirements-gate.log",
+          "summary": [
+            "[PASS] [자체] README 에 스펙 이탈·정정 기록                                      ",
+            "[PASS] [자체] analysis.md 가 격자 해상도 의존을 명시                               ",
+            "[PASS] [자체] analysis.md 에 그림 참조                                       ",
+            "[PASS] [자체] analysis.md 가 '겹쳐 요구를 모두 지켰다'고 과장하지 않는다                   ",
+            "---- 원문 52/52 · 자체 50/50 → 전체 102/102 PASS",
+            "     (주의: [자체] 항목 중 문서 형태·키워드 검사는 '문장에 그 단어가 있는가'만 본다 — 검증 강도가 낮다. 값의 검증은 [원문] 항목과 tests/ 가 담당한다)"
+          ]
+        },
+        {
+          "mission": "A2-1",
+          "command": "scripts/verify_lr_boundary.py",
+          "exit_code": 0,
+          "log": "reports\\current-verification\\A2-1-verify_lr_boundary-gate.log",
+          "summary": [
+            "0.0 564859072962.0"
+          ]
+        }
+      ],
+      "scope": "Implementation, retained artifact integrity and original-question coverage; not a personal-ability certification or a new full training run."
+    },
+    {
+      "mission": "A3-1",
+      "date": "2026-10-12",
+      "artifact_review_passed": true,
+      "blocking_issues": [],
+      "documented_limits": [
+        {
+          "type": "historical_optional_model_limit",
+          "issue": "v3 para-perspective experiment retains one expected failure; primary four-point scanner and separate v4 frontalization tests pass.",
+          "resolution": "Preserve v3 regression and archived code hashes. The existing v4 route addresses rectification when line-segment evidence is available; do not promise v3 recovery without new geometric evidence.",
+          "evidence": [
+            "tests/test_frontal.py",
+            "tests/test_dewarp2.py",
+            "scripts/check_requirements.py"
+          ]
+        }
+      ],
+      "test_counts": {
+        "passed": 49,
+        "xfailed": 1
+      },
+      "gate_commands": [
+        {
+          "mission": "A3-1",
+          "command": "scripts/check_requirements.py",
+          "exit_code": 0,
+          "log": "reports\\current-verification\\A3-1-check_requirements-gate.log",
+          "summary": [
+            "[PASS] 보고서가 실행 커맨드를 포함(재현)                                    ",
+            "[PASS] README 에 원커맨드 재현                                       ",
+            "[PASS] README 에 요구↔검증 표                                       ",
+            "[PASS] README 에 갭 표                                           ",
+            "[PASS] README 에 실측 요약 수치                                      ",
+            "---- 113/113 PASS"
+          ]
+        }
+      ],
+      "scope": "Implementation, retained artifact integrity and original-question coverage; not a personal-ability certification or a new full training run."
+    },
+    {
+      "mission": "A3-2",
+      "date": "2026-10-12",
+      "artifact_review_passed": true,
+      "blocking_issues": [],
+      "documented_limits": [
+        {
+          "type": "observation_scope",
+          "issue": "30 selected events were visually reviewed by Codex, using crowd targets and digital gain. Personal learner experience is not attested.",
+          "resolution": "Retain reviewer, frame traces, image hashes and acquisition labels. Physical lamps, isolated scenes and explicit resumption are not extra mandatory clauses. Supplement learner personal observation when submitting personal-experience assessment.",
+          "evidence": [
+            "reports/manual-review/reviewed.json",
+            "reports/manual-review/protocol-audit.json",
+            "reports/manual-review/pause-context-review.json"
+          ]
+        }
+      ],
+      "test_counts": {
+        "passed": 26
+      },
+      "gate_commands": [
+        {
+          "mission": "A3-2",
+          "command": "scripts/count_reviewed_events.py",
+          "exit_code": 0,
+          "log": "reports\\current-verification\\A3-2-count_reviewed_events-gate.log",
+          "summary": [
+            "30 reviewed events: correction traces, threshold counts, aggregate rates and image hashes verified"
+          ]
+        },
+        {
+          "mission": "A3-2",
+          "command": "scripts/audit_review_protocol.py",
+          "exit_code": 0,
+          "log": "reports\\current-verification\\A3-2-audit_review_protocol-gate.log",
+          "summary": [
+            "{\"source_gt_sha256\": \"9831bce704796e8c9e062daa5e814473a7504556c6caa4f054d6f8ca8401ab3d\", \"reviewer\": \"Codex frame-by-frame visual review of 30 contact sheets, assisted by automatic proposals; not a human learner self-measurement\", \"duration_seconds\": 20, \"counts_by_condition\": {\"single\": 10, \"cross\": 10, \"pause\": 5, \"light\": 5}, \"pause_diagnostics\": [{\"event_id\": \"pause-01\", \"truth_id\": 1, \"context_frame_range\": [171, 250], \"frame_count\": 80, \"missing_frames\": 0, \"center_displacement_px\": 20.65187642806338, \"consecutive_step_px\": {\"min\": 0.0, \"median\": 0.0, \"max\": 2.0}, \"stop_and_resume_visually_certified\": false}, {\"event_id\": \"pause-02\", \"truth_id\": 4, \"context_frame_range\": [396, 475], \"frame_count\": 80, \"missing_frames\": 0, \"center_displacement_px\": 16.507574019219177, \"consecutive_step_px\": {\"min\": 0.0, \"median\": 0.0, \"max\": 1.118033988749895}, \"stop_and_resume_visually_certified\": false}, {\"event_id\": \"pause-03\", \"truth_id\": 5, \"context_frame_range\": [296, 375], \"frame_count\": 80, \"missing_frames\": 0, \"center_displacement_px\": 36.124783736376884, \"consecutive_step_px\": {\"min\": 0.0, \"median\": 1.0, \"max\": 2.23606797749979}, \"stop_and_resume_visually_certified\": false}, {\"event_id\": \"pause-04\", \"truth_id\": 60, \"context_frame_range\": [451, 530], \"frame_count\": 80, \"missing_frames\": 0, \"center_displacement_px\": 15.508062419270823, \"consecutive_step_px\": {\"min\": 0.0, \"median\": 0.5, \"max\": 1.5}, \"stop_and_resume_visually_certified\": false}, {\"event_id\": \"pause-05\", \"truth_id\": 62, \"context_frame_range\": [176, 255], \"frame_count\": 80, \"missing_frames\": 0, \"center_displacement_px\": 17.804493814764857, \"consecutive_step_px\": {\"min\": 0.0, \"median\": 0.0, \"max\": 2.0}, \"stop_and_resume_visually_certified\": false}], \"required_next_steps\": [\"Record the visual qualification of pause candidates and expand context if temporary stopping is ambiguous.\", \"Retain crowd-source qualification for single-target events; the original does not explicitly require an isolated scene.\", \"Keep digital gain labelled as lighting stress; the original does not explicitly require a physical lamp test.\", \"Learner must perform and attest their own manual observation if personal experience is required; Codex cannot attest it.\"], \"original_protocol_note\": \"Original requires temporary stopping and manual observation; physical lamps, isolated scenes and a separately demonstrated resumption are not explicit requirements.\", \"all_requirements_certified\": false, \"scope\": \"Protocol evidence audit only; counting and image integrity are independently checked.\"}"
+          ]
+        }
+      ],
+      "scope": "Implementation, retained artifact integrity and original-question coverage; not a personal-ability certification or a new full training run."
+    },
+    {
+      "mission": "A4-1",
+      "date": "2026-10-12",
+      "artifact_review_passed": true,
+      "blocking_issues": [],
+      "documented_limits": [],
+      "test_counts": {
+        "passed": 25
+      },
+      "gate_commands": [
+        {
+          "mission": "A4-1",
+          "command": "scripts/check_requirements.py",
+          "exit_code": 0,
+          "log": "reports\\current-verification\\A4-1-check_requirements-gate.log",
+          "summary": [
+            "---- 원문 47/47 PASS · 자체 12/12 PASS ----",
+            "참고: [자체] 의 문서 형태 검사(키워드 presence)는 '문장에 그 단어가 있는가'만 본다(강도가 낮다). 값 검증은 [원문] 항목과 tests/ 가 담당한다."
+          ]
+        },
+        {
+          "mission": "A4-1",
+          "command": "scripts/cross_check_readme.py",
+          "exit_code": 0,
+          "log": "reports\\current-verification\\A4-1-cross_check_readme-gate.log",
+          "summary": [
+            "[cross_check] reports 18개·수치 1338개·표기 4672종·파생 71246종 · 대상 ['README.md', 'analysis.md'] · 출처 없음 0건",
+            "[cross_check] 머리값 대조 26/26 일치",
+            "[cross_check] 안(A) 예시 출력: 질의 일치 ✓ · 상위 5건 (score, doc_id) 일치 ✓",
+            "→ PASS: 리포트의 모든 숫자(안(A) 예시 출력 포함)가 이 런의 reports/*.json 에서 재구성된다"
+          ]
+        },
+        {
+          "mission": "A4-1",
+          "command": "scripts/verify_external_corpus.py",
+          "exit_code": 0,
+          "log": "reports\\current-verification\\A4-1-verify_external_corpus-gate.log",
+          "summary": [
+            "[{\"corpus\": \"20ng\", \"documents\": 3618, \"checks\": 10}, {\"corpus\": \"nsmc\", \"documents\": 4000, \"checks\": 10}]"
+          ]
+        }
+      ],
+      "scope": "Implementation, retained artifact integrity and original-question coverage; not a personal-ability certification or a new full training run."
+    },
+    {
+      "mission": "A4-2",
+      "date": "2026-10-12",
+      "artifact_review_passed": true,
+      "blocking_issues": [],
+      "documented_limits": [],
+      "test_counts": {
+        "passed": 109
+      },
+      "gate_commands": [
+        {
+          "mission": "A4-2",
+          "command": "scripts/check_requirements.py",
+          "exit_code": 0,
+          "log": "reports\\current-verification\\A4-2-check_requirements-gate.log",
+          "summary": [
+            "OK  [자체] 사전 보고서 live 일치",
+            "OK  [자체] 활용형 이외 어휘도 200 이상(보수적 자체 기준) — 원문이 어간 200을 명시했다는 뜻은 아님. 해석 위험을 제거하기 위한 보완",
+            "OK  [자체] 저장 게이트와 재계산 일치",
+            "",
+            "원문 20/20 · 자체 21/21",
+            "※ [자체] 중 'README 에 …' 류는 문서 형태 검사다. 값 검사가 아니므로 강도는 약하다 — 같은 항목의 값 판정은 [원문] 태그에서 한다."
+          ]
+        }
+      ],
+      "scope": "Implementation, retained artifact integrity and original-question coverage; not a personal-ability certification or a new full training run."
+    },
+    {
+      "mission": "A5-1",
+      "date": "2026-10-12",
+      "artifact_review_passed": true,
+      "blocking_issues": [],
+      "documented_limits": [],
+      "test_counts": {
+        "passed": 18
+      },
+      "gate_commands": [
+        {
+          "mission": "A5-1",
+          "command": "scripts/check_mission.py",
+          "exit_code": 0,
+          "log": "reports\\current-verification\\A5-1-check_mission-gate.log",
+          "summary": [
+            "  PASS [자체] 게이트 4/4 PASS(gates.json)",
+            "  PASS [자체] README 갭 표가 비어있지 않다 + 정직한 상태 표기",
+            "  PASS [자체] learning-map.md 를 손으로 갱신하지 않았다(허브 발췌본)",
+            "  PASS [자체] README 숫자가 reports/*.json 에서 재구성된다(cross_check)",
+            "  PASS [자체] src/·scripts/ 에 흩어진 시드 리터럴 없음",
+            "---- 원문 24/24 PASS · 자체 12/12 PASS ----"
+          ]
+        },
+        {
+          "mission": "A5-1",
+          "command": "scripts/cross_check_readme.py",
+          "exit_code": 0,
+          "log": "reports\\current-verification\\A5-1-cross_check_readme-gate.log",
+          "summary": [
+            "README 대조 PASS — 전부(39개) reports/*.json 에서 재구성됨"
+          ]
+        }
+      ],
+      "scope": "Implementation, retained artifact integrity and original-question coverage; not a personal-ability certification or a new full training run."
+    },
+    {
+      "mission": "A5-2",
+      "date": "2026-10-12",
+      "artifact_review_passed": true,
+      "blocking_issues": [],
+      "documented_limits": [],
+      "test_counts": {
+        "passed": 28
+      },
+      "gate_commands": [
+        {
+          "mission": "A5-2",
+          "command": "scripts/check_mission.py",
+          "exit_code": 0,
+          "log": "reports\\current-verification\\A5-2-check_mission-gate.log",
+          "summary": [
+            "PASS L114 군집별 마케팅/리스크 전략",
+            "PASS L120~126 권장 7섹션",
+            "PASS 보너스1 Streamlit app.py",
+            "PASS 보너스2 DBSCAN/계층 비교",
+            "",
+            "원문 조항 33/33 PASS · 보너스 2/2"
+          ]
+        },
+        {
+          "mission": "A5-2",
+          "command": "scripts/cross_check_readme.py",
+          "exit_code": 0,
+          "log": "reports\\current-verification\\A5-2-cross_check_readme-gate.log",
+          "summary": [
+            "  ✓ 효율성 오차",
+            "  ✓ 거절 풀",
+            "  ✓ C0 실제 연체율",
+            "  ✓ C0 인원",
+            "  ✓ C1 실제 연체율",
+            "  ✓ C1 인원"
+          ]
+        }
+      ],
+      "scope": "Implementation, retained artifact integrity and original-question coverage; not a personal-ability certification or a new full training run."
+    },
+    {
+      "mission": "A6-1",
+      "date": "2026-10-12",
+      "artifact_review_passed": true,
+      "blocking_issues": [],
+      "documented_limits": [],
+      "test_counts": {
+        "passed": 25
+      },
+      "gate_commands": [
+        {
+          "mission": "A6-1",
+          "command": "scripts/check_mission.py",
+          "exit_code": 0,
+          "log": "reports\\current-verification\\A6-1-check_mission-gate.log",
+          "summary": [
+            "[Stage 4] Intentional Bug Mutation Suite (6/6 caught): PASS",
+            "[Stage 5] Single-Source Seed Hygiene (config.py): PASS",
+            "[Stage 6] Markdown Table Alignment & Zero CJK Check: PASS",
+            "[Stage 7] Visual Figures Integrity (5 PNGs): PASS",
+            "[Stage 8] Hand Derivations Document (P0): PASS",
+            "=== ALL 8 SELF-CHECK STAGES PASSED ==="
+          ]
+        }
+      ],
+      "scope": "Implementation, retained artifact integrity and original-question coverage; not a personal-ability certification or a new full training run."
+    },
+    {
+      "mission": "A6-2",
+      "date": "2026-10-12",
+      "artifact_review_passed": true,
+      "blocking_issues": [],
+      "documented_limits": [],
+      "test_counts": {
+        "passed": 17
+      },
+      "gate_commands": [
+        {
+          "mission": "A6-2",
+          "command": "-m pytest -q tests/test_gates.py tests/test_leakcheck.py tests/test_frozen_input.py",
+          "exit_code": 0,
+          "log": "reports\\current-verification\\A6-2-test_frozen_input-gate.log",
+          "summary": [
+            "...........                                                              [100%]",
+            "11 passed in 2.26s"
+          ]
+        }
+      ],
+      "scope": "Implementation, retained artifact integrity and original-question coverage; not a personal-ability certification or a new full training run."
+    }
+  ],
+  "passed": 336,
+  "skipped": 0,
+  "xfailed": 1,
+  "external_input_hashes": 1213,
+  "question_count": 187,
+  "blocking_issues": [],
+  "publication_decision": "ready",
+  "source": "Executable tests and requirement gates; manual interpretation is recorded in each publication_review."
+}

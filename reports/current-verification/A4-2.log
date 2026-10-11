@@ -1,0 +1,37 @@
+........................................................................ [ 66%]
+.....................................                                    [100%]
+============================== warnings summary ===============================
+..\..\.venv-verification\Lib\site-packages\matplotlib\_fontconfig_pattern.py:64
+  C:\Users\rlduq\Downloads\Codyssey\.venv-verification\Lib\site-packages\matplotlib\_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+    prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+
+..\..\.venv-verification\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+..\..\.venv-verification\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+..\..\.venv-verification\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+..\..\.venv-verification\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+..\..\.venv-verification\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+..\..\.venv-verification\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+..\..\.venv-verification\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+..\..\.venv-verification\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+..\..\.venv-verification\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+  C:\Users\rlduq\Downloads\Codyssey\.venv-verification\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    parse = parser.parseString(pattern)
+
+..\..\.venv-verification\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+..\..\.venv-verification\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+..\..\.venv-verification\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+..\..\.venv-verification\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+..\..\.venv-verification\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+..\..\.venv-verification\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+..\..\.venv-verification\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+..\..\.venv-verification\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+..\..\.venv-verification\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+  C:\Users\rlduq\Downloads\Codyssey\.venv-verification\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+    parser.resetCache()
+
+..\..\.venv-verification\Lib\site-packages\matplotlib\_mathtext.py:45
+  C:\Users\rlduq\Downloads\Codyssey\.venv-verification\Lib\site-packages\matplotlib\_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+    ParserElement.enablePackrat()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+109 passed, 20 warnings in 15.38s

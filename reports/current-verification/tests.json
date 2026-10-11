@@ -1,0 +1,143 @@
+{
+  "timestamp_utc": "2026-10-11T16:39:25.413795+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "records": [
+    {
+      "mission": "A1-1",
+      "exit_code": 0,
+      "summary": [
+        "................                                                         [100%]",
+        "16 passed in 8.55s"
+      ],
+      "counts": {
+        "passed": 16
+      }
+    },
+    {
+      "mission": "A2-1",
+      "exit_code": 0,
+      "summary": [
+        "    parser.resetCache()",
+        "",
+        "tests/test_gradcheck.py::test_backward_matches_numeric[1.0]",
+        "  C:\\Users\\rlduq\\Downloads\\Codyssey\\.venv-verification\\Lib\\site-packages\\matplotlib\\_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'",
+        "    ParserElement.enablePackrat()",
+        "",
+        "-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html",
+        "23 passed, 14 warnings in 4.13s"
+      ],
+      "counts": {
+        "passed": 23
+      }
+    },
+    {
+      "mission": "A3-1",
+      "exit_code": 0,
+      "summary": [
+        "...........x......................................                       [100%]",
+        "49 passed, 1 xfailed in 145.05s (0:02:25)"
+      ],
+      "counts": {
+        "passed": 49,
+        "xfailed": 1
+      }
+    },
+    {
+      "mission": "A3-2",
+      "exit_code": 0,
+      "summary": [
+        "..........................                                               [100%]",
+        "26 passed in 21.55s"
+      ],
+      "counts": {
+        "passed": 26
+      }
+    },
+    {
+      "mission": "A4-1",
+      "exit_code": 0,
+      "summary": [
+        ".........................                                                [100%]",
+        "25 passed in 12.59s"
+      ],
+      "counts": {
+        "passed": 25
+      }
+    },
+    {
+      "mission": "A4-2",
+      "exit_code": 0,
+      "summary": [
+        "    parser.resetCache()",
+        "",
+        "..\\..\\.venv-verification\\Lib\\site-packages\\matplotlib\\_mathtext.py:45",
+        "  C:\\Users\\rlduq\\Downloads\\Codyssey\\.venv-verification\\Lib\\site-packages\\matplotlib\\_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'",
+        "    ParserElement.enablePackrat()",
+        "",
+        "-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html",
+        "109 passed, 20 warnings in 15.38s"
+      ],
+      "counts": {
+        "passed": 109
+      }
+    },
+    {
+      "mission": "A5-1",
+      "exit_code": 0,
+      "summary": [
+        "============================== warnings summary ===============================",
+        "tests/test_no_leak.py::test_1_스케일러_통계는_train에서",
+        "tests/test_no_leak.py::test_2_임퓨터_통계도_train에서",
+        "  C:\\Users\\rlduq\\Downloads\\Codyssey\\.venv-verification\\Lib\\site-packages\\sklearn\\linear_model\\_logistic.py:451: DeprecationWarning: scipy.optimize: The `disp` and `iprint` options of the L-BFGS-B solver are deprecated and will be removed in SciPy 1.18.0.",
+        "    opt_res = optimize.minimize(",
+        "",
+        "-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html",
+        "18 passed, 2 warnings in 10.23s"
+      ],
+      "counts": {
+        "passed": 18
+      }
+    },
+    {
+      "mission": "A5-2",
+      "exit_code": 0,
+      "summary": [
+        "    return fn(self, *args, **kwargs)",
+        "",
+        "tests/test_mission.py: 16 warnings",
+        "  C:\\Users\\rlduq\\Downloads\\Codyssey\\.venv-verification\\Lib\\site-packages\\matplotlib\\_mathtext.py:2178: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'",
+        "    ParserElement.resetCache()",
+        "",
+        "-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html",
+        "28 passed, 1153 warnings in 26.95s"
+      ],
+      "counts": {
+        "passed": 28
+      }
+    },
+    {
+      "mission": "A6-1",
+      "exit_code": 0,
+      "summary": [
+        ".........................                                                [100%]",
+        "25 passed in 31.54s"
+      ],
+      "counts": {
+        "passed": 25
+      }
+    },
+    {
+      "mission": "A6-2",
+      "exit_code": 0,
+      "summary": [
+        ".................                                                        [100%]",
+        "17 passed in 9.58s"
+      ],
+      "counts": {
+        "passed": 17
+      }
+    }
+  ],
+  "scope": "Current platform pytest only; archived training and GUI evidence is separate."
+}

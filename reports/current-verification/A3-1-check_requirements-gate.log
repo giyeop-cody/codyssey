@@ -1,0 +1,114 @@
+[PASS] src/data_gen.py 존재
+[PASS] 촬영 로그 40행                                              40행
+[PASS] 로그에 조명·각도·배경·잡음 기록
+[PASS] 미션 20장 = 쉬움 5 + 어려움 15                                 20장(어려움 15)
+[PASS] 진실 mask 40장(채점용 정답)                                    40장
+[PASS] EDA 표 존재(8조건 × 분포 통계)                                  8조건
+[PASS] EDA csv 저장
+[PASS] 그림 02 히스토그램+그래디언트
+[PASS] 저조도 그래디언트 << 쉬움(수치로 원인 설명)                             저조도 249.1 vs 쉬움 506.8(2.03배)
+[PASS] src/gui_trackbars.py 존재
+[PASS] 트랙바 3개(blur ksize · Canny lo · hi)                     blur_k(ksize=2k+1, 0~15) · canny_lo(0~255) · canny_hi(0~255)
+[PASS] 헤드리스 대체 증거 3장                                          3장
+[PASS] imshow 실패 양식이 '미검증'으로 기록됨                              exit -6 · 불가(이 환경에 DISPLAY 없음)
+[PASS] src/scanner.py::find_document_quad 존재
+[PASS] 조건 8개 검출률 표
+[PASS] 면적 상한 스윕 6수준                                           6행
+[PASS] 면적 상한 없음의 실패(프레임 테두리 반환) 실측                            max_frac 1.0: 테두리 12.5% · 성공 80.0%
+[PASS] 그리드에 approxPolyDP eps 2수준 포함
+[PASS] 그리드 18설정 ≥ 18                                          18설정
+[PASS] 정렬을 라이브러리에 위임하지 않음(minAreaRect/boxPoints 미사용)
+[PASS] getPerspectiveTransform + warpPerspective 사용
+[PASS] 셔플 4종 전부 tl,tr,br,bl                                   4/4
+[PASS] 45° 마름모 고유점 4/4(cyclic)
+[PASS] x+y/x−y 키의 결함 재현(고유점 3 · 면적 50%)                       고유점 3 · 면적 10000.0px²
+[PASS] 변환 결과 저장(표본)                                           12장
+[PASS] adaptiveThreshold 사용
+[PASS] 전처리 5종 트레이드오프 표                                        5종
+[PASS] 전처리 표의 '원본 gray' = 스캐너 표 성공률(같은 잣자 검증)                 전처리 실험이 스캐너와 다른 검출 규칙(면적 상한 등)을 쓰면 여기서 걸린다 — 3차 감사에서 추가
+[PASS] T5 임계 방식 비교(고정 vs 중앙값 기반) 8조건                          고정 92.5% vs 중앙값 87.5%
+[PASS] 결과 저장 40건                                              40건
+[PASS] jpg·png 두 포맷 사용(포맷 근거 기록)
+[PASS] PDF 내보내기(보너스 3) 쪽수 ≥ 30                                37쪽 1.85 MB
+[PASS] 성공 정의(IoU ≥ 0.85)가 보고서에 명시
+[PASS] 성공 정의가 '4점 검출'과 구분됨
+[PASS] 미션 20장 표 4조건 5장씩
+[PASS] 조건별 95% CI 병기
+[PASS] 같은 검출을 두 자(mask·GT4점)로 병기
+[PASS] 실패 케이스 ≥ 3건                                            3건
+[PASS] 분석한 실패 사례 ≥ 5건(기본 + 설정 오선택)                            기본 3 + 설정오선택 3
+[PASS] 실패마다 시도 파라미터와 결과(구제 수) 기록
+[PASS] 실패 상세 문서 존재
+[PASS] 보너스1: 벡터화가 이중 for문보다 ≥ 10배                             337.3배(분리가능 963.8배)
+[PASS] 보너스1: 분리가능 구현 동등성(내부 최대차 < 1e-6px)                     1.705e-13px
+[PASS] 보너스2: 종횡비 오차 표(정면·45°)
+[PASS] 보너스3: PDF 파일 존재
+[PASS] 게이트 4개 판정 존재
+[PASS] 게이트 전부 PASS                                            G1=P, G2=P, G3=P, G4=P
+[PASS] G1 근거가 면적 상한 실험(실측)
+[PASS] G2 잡음 대조군이 포함됨
+[PASS] 규칙 기반의 한계 ≥ 5건                                         8건
+[PASS] 한계마다 '실패하는 상황'에 실측 숫자가 있다                              8/8건
+[PASS] G4 실사진 300장 이상 재검증                                     322장
+[PASS] G4 코드해시 기록(측정 코드 동일성)
+[PASS] G4 합성 낙관 폭 명시
+[PASS] dewarp 확장 산출물(json·장별 csv·그림 15)
+[PASS] dewarp 측정 코드해시 == 현재 코드(5파일)                           b12b702f953de143
+[PASS] dewarp 베이스라인 == realdata 성공률(같은 자 교차검증)                dewarp 전 7.6/9.8 vs realdata 7.6/9.8
+[PASS] dewarp2 확장 산출물(json·장별 csv·그림 16)
+[PASS] dewarp2 측정 코드해시 == 현재 코드(6파일)                          3a27692c18738a11
+[PASS] dewarp2 베이스라인 == realdata 성공률(같은 자 교차검증)               dewarp2 전 7.6/9.8 vs realdata 7.6/9.8
+[PASS] frontal 확장 산출물(json·장별 csv·그림 17)
+[PASS] frontal 측정 코드해시 == 현재 코드(7파일)                          32bdcc2a7f862102
+[PASS] frontal 베이스라인 == realdata 성공률(같은 자 교차검증)               frontal 전 7.6/9.8 vs realdata 7.6/9.8
+[PASS] cardseg 확장 산출물(json·그림 18)
+[PASS] cardseg 측정 코드해시 == 현재 코드(스크립트+7파일)                     2d0d6d108f6565de
+[PASS] cardseg 학습/검증 카드 분리(누수 없음·276장 보존)                     학습카드 34 · 검증카드 12 · 교집합 0 · 204+72장
+[PASS] boundary 확장 산출물(json·장별 csv·그림 19)
+[PASS] boundary 측정 코드해시 == 현재 코드(8파일)                         a0766eaa3c580b09
+[PASS] boundary 베이스라인 == realdata 성공률(같은 자 교차검증)              boundary 전 7.6/9.8 vs realdata 7.6/9.8
+[PASS] 퇴화 식별성 실험 산출물(json·3실험 판정)                             wrap=도메인 위반(게이트가 정답) · tau=구조적 비식별(v4 VP 증거로 전환 해소) · 거울=현 증
+[PASS] boundary-unet 산출물(json·장별 csv)
+[PASS] boundary-unet 측정 코드해시 == 현재 코드(스크립트2+5파일)              c4b4de4d62032ebd
+[PASS] boundary-unet 누수 없음(검증 12카드 72장만·McNemar b·c 기재)       장수 72 · 검증 72장(누수 없음) baseline 13.9% → Otsu 40.3% → U-Net
+[PASS] boundary-unet DG 정직 진단(quadIoU 최대 < 임계 기록)             quadIoU 최대 0.7886 < 임계 0.85
+[PASS] E4 거울 chirality 산출물(json·출력불변 판정 기록)                   동점은 전 곡률에서 정확(잔차비 1.000, κ_partner=−κ_A)하나 나이브 음κ 초기화로는 도달 불
+[PASS] E5 핀홀-τ 산출물(json·고정pf 팔이 참τ 회복 기록)                     C(고정 초점거리)에서 τ 골이 참값에 부활(argmin 0.12, 골폭 125.9665px)하고 B(자유
+[PASS] synthseg 학습 산출물(json·그림20·mix json)
+[PASS] synthseg 측정 코드해시 == 현재 코드(스크립트2+2파일)                   abd7eb1683aa7e00
+[PASS] boundary-synth 산출물(json·장별 csv·4팔+mix 기록)
+[PASS] boundary-synth 측정 코드해시 == 현재 코드(스크립트5+5파일)             5b20983f356a680f
+[PASS] v8 사전등록 잣대 기록(G팔 포함 + real_vs_realmix McNemar b·c·p)   {'b_ok_real만성공': 4, 'c_ok_realmix만성공': 14, 'p': 0.0309}
+[PASS] v8 realseg 학습 산출물(json·그림21·mix json)
+[PASS] v8 realseg 측정 코드해시 == 현재 코드(스크립트3+2파일)                 1001a33cb2413fe6
+[PASS] v8.1 스윕 산출물(rep2·rep8 학습 manifest 사본)                  rep2=있음 rep8=있음
+[PASS] v8.1 스윕 사전등록 선택 규칙 기록(규칙+선택 키, H/I 팔 있으면 선택 non-null)  rep8
+[PASS] v9 U²-Netp J/K 72장 실측 + 챔피언 판정(실제 수치)                  rep8 56 vs J 46 vs K 52
+[PASS] v9 OCR 행간/자폭·부분 편집 데모(가시+비가시) 수치                       22
+[PASS] v9.1 줄 전체 치환·자동 래스터 보존·전각 후보 실측                        가시 3줄 · 원본보존 5줄
+[PASS] v9 PDF 구조 실측(A4 1쪽 · 텍스트 추출 · 컬러 이미지 포함)               pages=1, chars=164, images=1
+[PASS] v9.1 검수본 가시 벡터·한국어/전각 추출·사진/원본 보호                      auto=22 reviewed=54 · raster_lines=2
+[PASS] v9.1 일반 종이 양성통제 12뷰 코드해시==현재 코드                        059b94ef0145b99c
+[PASS] v9.1 종이 분할(rep8 vs U²-Netp)을 카드 벤치와 분리해 검증             rep8=0 U²-Netp=12
+[PASS] v9.1 원근 합성 사진→U²-Netp→정정→편집 PDF 끝까지 실증                 quad IoU=0.995 vector=4줄
+[PASS] v9.1 외부 실촬영 종이 2장 smoke 코드해시==현재 코드                    0be7d79295ef156d
+[PASS] v9.1 종이 실사진 2장 경계 육안 QA + 저해상도 OCR 보간 비교               인쇄본 1→13 가시 줄 (OCR 정답 없음)
+[PASS] v9.2 OCR 검출 전 행 벡터 + 검수본 provenance 명시                 자동 8 / 검수 8 줄
+[PASS] v9.2 PDF 독립 삽화(전체 사진 X) + CJK·전각 텍스트 추출                images=1, image/page=0.217
+[PASS] v9.3 OCR 0줄에서도 승인한 누락 2줄·흑백 그림 ROI 복원                  수동 추가 2줄 / 그림 1개
+[PASS] v9.3 PDF 실제 벡터 텍스트·별도 이미지(전면 비트맵 금지)                   images=1, image/page=0.210
+[PASS] v9.4 원근 사진 U²-Netp→OCR→수동 승인→구조 PDF 흐름                 quad IoU=0.995; 자동 미검수=8, 검수=8
+[PASS] v9.4 PDF 전각 포함 8줄 텍스트 객체+1그림(전면 비트맵 X)                 lines=8, image/page=0.207
+[PASS] v9.5 합성 무채색 ROI 자동 + 실사 2장 전폭/텍스트 오탐 보류                합성 1 ROI · 실사 2장 제안 [0, 0]
+[PASS] v9.5 PDF 독립 무채색 이미지+수동 벡터 텍스트(전면사진 X)                  image/page=0.219
+[PASS] v9.6 CORD 원본/라벨 해시 10장·CC BY 출처 + OCR 악화 정직 보고         개발 원본→정정 26→16 / 추가 30→8
+[PASS] v9.6 영수증 PDF 배경·열 분리 진단(미검수 결과를 완료로 위장 X)              배경 BGR=[148, 155, 151] · 열 5 분리
+[PASS] v9.7 CORD 실사진 정정 PDF 10개 + 비교 PDF 10쪽 저장·출처 일치         개별 10장 · 비교 10쪽
+[PASS] v9.7 편집 PDF 아님·실사 실패/라이선스 문서에 명시                       OCR 문서 내용은 이미지 픽셀이며 별도 편집할 수 없음
+[PASS] 보고서 5개 절(결과표·실패·딜레마·한계·학습)
+[PASS] 보고서가 실행 커맨드를 포함(재현)
+[PASS] README 에 원커맨드 재현
+[PASS] README 에 요구↔검증 표
+[PASS] README 에 갭 표
+[PASS] README 에 실측 요약 수치
+---- 113/113 PASS

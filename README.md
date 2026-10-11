@@ -136,16 +136,20 @@ A → M 진입 연결(기존 정리): A3 → M1·M3 (모빌리티·로보틱스)
 git clone https://github.com/giyeop-cody/codyssey.git
 cd codyssey && git submodule update --init ai-sw-basic
 
-# 2) 전체 (심화·정의서 포함 — 비공개 레포가 있으므로 인증 필요)
-git clone --recursive https://github.com/giyeop-cody/codyssey.git
-# 이미 클론한 경우
-git submodule update --init --recursive
+# 2) 심화 직계 저장소만 (비공개 레포 인증 필요)
+git -c submodule.recurse=false clone https://github.com/giyeop-cody/codyssey.git
+cd codyssey
+python tools/init_direct_submodules.py
+# 원문은 sibling clone으로 사용한다
+git clone -c core.autocrlf=false https://github.com/giyeop-cody/codyssey-taskmap.git ../codyssey-taskmap
+git clone -c core.autocrlf=false https://github.com/giyeop-cody/codyssey-evalmap.git ../codyssey-evalmap
 
 # 3) 최신 상태로 갱신
-git submodule update --remote --recursive
+git -c submodule.recurse=false -c fetch.recurseSubmodules=false pull --ff-only
+python tools/init_direct_submodules.py
 
-# 4) 비공개 서브모듈 인증 (토큰은 환경변수로만 — .gitmodules 에 절대 넣지 않는다)
-git config --global url."https://${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
+# 4) 기존 Git Credential Manager/GitHub 로그인으로 인증한다.
+# 토큰을 URL이나 Git 설정에 기록하지 않는다.
 ```
 
 서브모듈 23개 중 **22개가 비공개** 레포다(A 트랙 20 + 허브 + taskmap). 권한이 없으면 그 폴더는 비어 보이고 GitHub 웹에서는 링크가 404 다 — 공개 레포만 필요하면 `ai-sw-basic/` 만 초기화한다.
@@ -167,10 +171,24 @@ git config --global url."https://${GITHUB_TOKEN}@github.com/".insteadOf "https:/
 
 ## 2026-10-11 원문 기준 재검증
 
-[최신 독립 재검증 기록](codyssey-A-studylog-hub/docs/09-independent-reverification.md): 테스트327건 통과, 선택 OCR3건 미검증, 기존 곡면 모델1건 예상 실패. 원문 충돌·GUI/실영상 미검증·PCA 평가 조건 차이가 남아 전체 충족 판정 및 커밋·푸시는 보류했다. 변경은 로컬 작업 트리에 남아 있다.
+[당시 독립 재검증 기록](codyssey-A-studylog-hub/docs/09-independent-reverification.md): 테스트327건 통과, 선택 OCR3건 미검증, 기존 곡면 모델1건 예상 실패. 원문 충돌·GUI/실영상 미검증·PCA 평가 조건 차이가 남아 전체 충족 판정 및 커밋·푸시는 보류했다. 변경은 로컬 작업 트리에 남아 있다.
 
-최신재검증: [334개 회귀검사와 남은 차이](codyssey-A-studylog-hub/docs/10-final-reverification.md). 커밋·푸시는 보류했다.
+당시 재검증: [334개 회귀검사와 남은 차이](codyssey-A-studylog-hub/docs/10-final-reverification.md). 커밋·푸시는 보류했다.
 
 ## 이어서 진행할 작업
 
-현재 상태는 미완료 작업 체크포인트입니다. [핸드오프](HANDOFF-2026-10-11.md)의 남은 항목과 재현 방법을 확인하세요. `git submodule update --init --recursive`로 하위 저장소까지 복원하세요.
+이전 체크포인트와 재개 방법은 [핸드오프](HANDOFF-2026-10-11.md)를 확인하세요. `python tools/init_direct_submodules.py`로 직계 저장소만 복원합니다. 허브 내부 중복 저장소와 원문 역참조를 재귀 초기화하지 않습니다.
+
+
+## 2026-10-12 재개 검증
+
+10개 미션 Windows 테스트 336 passed / 0 skipped / 선택 v3 xfail 1개, 다운로더 경계 검사 4개 통과. 원문 187문항 연결과 원본 입력 1213개 SHA 검사를 통과했다. A3-2 조건 적격성 제한과 선택 v3 한계는 남아 있다. 최종 제출 완료 인증은 아니다.
+[재개 변경과 남은 한계](docs/resume-2026-10-12.md)
+
+## 2026-10-12 전체 과제 최종 재검증
+
+[10개 과제 전체 검증과 해결 기록](docs/all-missions-review-2026-10-12.md).
+미션 전체336 passed / 0 skipped / 알려진 선택 v3 xfail1건, 과제별 요구사항·산출물 검사 전부 exit0,
+187문항 연결·원문10쌍 SHA·외부 입력1213개 해시·다운로더 경계4개 검사가 통과했다.
+공개 대상 구현·산출물에서 차단 오류를 발견하지 않아 커밋·푸시를 진행한다.
+이전 보류 판단은 이 전수 재검증으로 갱신한다. 추가 실험 한계와 개인 평가 범위는 기록에 보존한다.
