@@ -159,3 +159,8 @@ git config --global url."https://${GITHUB_TOKEN}@github.com/".insteadOf "https:/
 > *이 레포지토리는 Codyssey 학습 플랫폼의 과제 체계를 기반으로 자동 구성되었습니다.*  
 > *3과정 통합·정의서 연결 갱신: 2026-09-27 · 핀·상태 전수 재동기: 2026-10-10*
 
+
+
+## 심화 A 과제 — 평가 항목에 맞춘 실제 산출물 개선
+
+10개 과제의 구현·분석 산출물을 보완하고 스터디 로그의 질문·답변을 갱신했다. [개선 결과와 최신 답변 색인](https://github.com/giyeop-cody/codyssey-A-studylog-hub/blob/4974bd0c7e13323bd51fbc601b13736b2ec42e51/docs/08-evaluation-improvements.md)에서 수정 사항·실측·남은 검증 범위를 확인한다.
